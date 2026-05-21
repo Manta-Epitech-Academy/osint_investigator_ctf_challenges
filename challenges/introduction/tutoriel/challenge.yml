@@ -1,0 +1,36 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Tutoriel
+author: "author"
+category: introduction
+description: |
+  Bienvenue !
+   
+   Voici quelques informations à savoir avant de commencer :
+   
+   1. Les défis sont de différentes catégories : Cryptographie, Stéganographie, OSINT, GeoInt, Programmation, etc.
+   2. Chaque défi contient un **drapeau** (flag) que vous devez capturer pour obtenir des points.
+   3. Les flags sont souvent au format `ctf{solution_du_drapeau}`.
+   4. Vous pouvez utiliser tous les outils à votre disposition, mais la curiosité et l'intuition sont vos meilleures alliées.
+   5. Chaque défi peut avoir une solution simple ou compliquée : soyez patient et persévérant !
+   
+   Pour valider ce premier challenge, mettez ctf{Lu_3t_4ppr0uv3}.
+attribution: "Written by [author](https://ctfd.io)"
+value: 10
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - introduction
+  - very_easy
+
+state: visible
+version: "0.1"

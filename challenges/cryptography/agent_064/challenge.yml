@@ -1,0 +1,30 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Agent 064
+author: "author"
+category: cryptography
+description: |
+  Nous avons reçu un message de notre agent 064, mais il ne respecte pas notre nouveau système de chiffrement. Cet agent a une fâcheuse habitude d'encoder ses communications en base64. Pouvez-vous retrouver ce qu'il a essayé de nous transmettre?
+  
+  **TGEgTmludGVuZG8gNjQsIMOpZ2FsZW1lbnQgY29ubnVlIHNvdXMgbGVzIG5vbXMgZGUgY29kZSBjdGZ7UHJvamVjdCBSZWFsaXR5fS4=**
+  
+  format: ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 32
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - cryptography
+  - easy
+
+state: visible
+version: "0.1"

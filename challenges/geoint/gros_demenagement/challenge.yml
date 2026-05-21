@@ -1,0 +1,29 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Gros déménagement
+author: "author"
+category: geoint
+description: |
+  Je viens de découvrir que les campus Epitech de Montpellier, Nantes et Lille ont tous déménagé au moins une fois. Si l'on trace une ligne entre leurs anciens emplacements, un point central semble se dessiner... Pouvez-vous m'aider à trouver l'adresse qui les relie au centre ?
+   
+  format: ctf{adresse}
+  Exemple de réponse : ctf{3 Pl. Paul Bec, 34000 Montpellier}
+attribution: "Written by [author](https://ctfd.io)"
+value: 120
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - geoint
+  - hard
+
+state: visible
+version: "0.1"

@@ -1,0 +1,31 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Un simple pont
+author: "author"
+category: geoint
+description: |
+  Pouvez-vous trouver le nom de celui qui a pris la photo ainsi que la ville où la photo a été prise ?
+  
+  format: ctf{nom_ville}
+  
+  Exemple de réponse : ctf{Maya_Castelnau-Le-Lez}
+  >
+attribution: "Written by [author](https://ctfd.io)"
+value: 60
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - geoint
+  - medium
+
+state: visible
+version: "0.1"

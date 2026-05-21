@@ -1,0 +1,34 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Rex
+author: "author"
+category: programming
+description: |
+  Votre tâche consiste à extraire un mot de passe secret caché dans un océan de lettres, nombres et symboles. Nous avons réussi à trouver l'expression régulière pour capturer le groupe correspondant et récupérer le flag. A vous de jouer !
+    
+   Message :
+  > ctf{m8&BwS0tY3cn=iN\o7eYbCWyHJP4q42YxN(:33EpmF&5ukRogj[_#]ugzV7ECxs;k54VqdG5NQWd[[[pQeB:H:/I>IFl}
+  > 
+  Expression régulière :
+  ctf{[^o]*([a-zA-Z0-9]*).*}
+   
+   format : ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 60
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - programming
+  - medium
+
+state: visible
+version: "0.1"

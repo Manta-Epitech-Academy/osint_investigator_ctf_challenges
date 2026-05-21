@@ -1,0 +1,30 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Sonagram
+author: "author"
+category: steganography
+description: |
+  Mon instrument de musique fait un bruit extrêmement étrange...
+  Pouvez-vous m'aider à le réparer ?
+  
+  format: ctf{solution}
+  >
+attribution: "Written by [author](https://ctfd.io)"
+value: 120
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - steganography
+  - hard
+
+state: visible
+version: "0.1"

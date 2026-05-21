@@ -1,0 +1,31 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Base64 ou rien
+author: "author"
+category: programming
+description: |
+  On dirait que quelqu’un a brouillé ce code à dessein… Trouvez un moyen d’exécuter ce qu’il cache.
+  
+  format: ctf{nombre}
+attribution: "Written by [author](https://ctfd.io)"
+value: 60
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - programming
+  - medium
+
+files:
+  - 64.txt
+
+state: visible
+version: "0.1"

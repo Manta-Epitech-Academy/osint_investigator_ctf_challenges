@@ -1,0 +1,30 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Plat de résistance
+author: "author"
+category: cryptography
+description: |
+  Nous testons un nouveau système de chiffrement par décalage pour sécuriser nos messages entre agents. Avant de le déployer à grande échelle, nous avons besoin de tester sa solidité. Pouvez-vous tenter de déchiffrer ce message ? 
+  
+  **fwi{K3oo0_z0uog!}**
+  
+  format: ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 20
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - cryptography
+  - very_easy
+
+state: visible
+version: "0.1"

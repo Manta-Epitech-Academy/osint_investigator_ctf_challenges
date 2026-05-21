@@ -1,0 +1,30 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Salade recomposée
+author: "author"
+category: cryptography
+description: |
+  Cette fois-ci, le système de chiffrement par décalage a été modifié pour rendre la tâche un peu plus corsée ! Le message a été chiffré avec plusieurs décalages différents. Je compte sur vous pour trouver une faille, s'il y en a une.
+  
+  **fwi{Sl zaqt omjdn}**
+  
+  format: ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 50
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - cryptography
+  - easy
+
+state: visible
+version: "0.1"

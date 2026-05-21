@@ -1,0 +1,31 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Fontastique
+author: "author"
+category: steganography
+description: |
+  J'étais en train de rédiger un document important, mais en me retournant, mon chat a sauté sur mon clavier et a tout gâché. Le texte est devenu totalement illisible. Pouvez-vous m'aider à retrouver ce que j'étais en train d'écrire ?
+  
+  format: ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 20
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - steganography
+  - very_easy
+
+files:
+  - weird_characters.docx
+
+state: visible
+version: "0.1"

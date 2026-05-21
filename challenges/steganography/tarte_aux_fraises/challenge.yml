@@ -1,0 +1,31 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Tarte aux fraises
+author: "author"
+category: steganography
+description: |
+  Nous avons trouvé cette recette sur le PC d'un de nos agents... Etrange.
+   
+  format: ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 30
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - steganography
+  - easy
+
+files:
+  - white.docx
+
+state: visible
+version: "0.1"

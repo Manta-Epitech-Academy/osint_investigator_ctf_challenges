@@ -1,0 +1,31 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Derrière l’image
+author: "author"
+category: osint
+description: |
+  Un ancien étudiant d'Epitech nous a laissé cette image: le logo de l'école y est clairement visible, mais quelque chose semble y avoir été dissimulé.
+   
+  format: ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 50
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - osint
+  - easy
+
+files:
+  - epitech_4.jpg
+
+state: visible
+version: "0.1"

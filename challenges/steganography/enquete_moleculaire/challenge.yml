@@ -1,0 +1,29 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Enquête moléculaire
+author: "author"
+category: steganography
+description: |
+  Nous avons retrouvé des traces de l'agent 011. Le labo a fourni une image d’une molécule, mais nous ne savons pas si elle est pertinente. Pouvez-vous identifier son nom pour faire avancer l’enquête ?
+  
+  format: ctf{nom_molécule}
+  >
+attribution: "Written by [author](https://ctfd.io)"
+value: 80
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - steganography
+  - medium
+
+state: visible
+version: "0.1"

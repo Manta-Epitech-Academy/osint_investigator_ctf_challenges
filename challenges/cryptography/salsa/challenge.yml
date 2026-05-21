@@ -1,0 +1,30 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Salsa
+author: "author"
+category: cryptography
+description: |
+  Bon, si vous trouvez cette fois, nous allons devoir complétement changer notre système de chiffrement une nouvelle fois...
+   
+  [|^(vWv+gn8m{W<mz,g\8fkWr,u,9ku.
+  
+  format: ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 120
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - cryptography
+  - hard
+
+state: visible
+version: "0.1"

@@ -1,0 +1,27 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Encre sympathique
+author: "author"
+category: programming
+description: |
+  Nous avons mis la main sur un fichier qui semble complètement vide… mais ne vous y trompez pas. Notre détecteur indique qu'il s'y cache un langage étrange, invisible à l'œil nu.
+  >
+attribution: "Written by [author](https://ctfd.io)"
+value: 80
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - programming
+  - medium
+
+state: visible
+version: "0.1"

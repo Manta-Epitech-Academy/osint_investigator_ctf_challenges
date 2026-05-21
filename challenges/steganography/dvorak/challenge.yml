@@ -1,0 +1,30 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Dvorak
+author: "author"
+category: steganography
+description: |
+  Mon ami m'a envoyé un message vraiment étrange.. à l'aide de son nouveau clavier ? Vous pouvez m'aider ?
+  
+  **JYU{J0BY4JY3*S01}**
+  
+  format: ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 20
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - steganography
+  - very_easy
+
+state: visible
+version: "0.1"

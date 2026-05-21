@@ -1,0 +1,33 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Formation
+author: "author"
+category: programming
+description: |
+  Nous savons que ce code génère un motif bien précis... mais nous avons oublié quel langage de programmation il utilise. Pouvez-vous exécuter ce code et trouver la forme du motif généré ainsi que le nombre de caractères qui la compose ?
+   
+  format: ctf{forme_nombre}
+   
+  Exemple de réponse : ctf{losange_45}
+attribution: "Written by [author](https://ctfd.io)"
+value: 40
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - programming
+  - easy
+
+files:
+  - code.txt
+
+state: visible
+version: "0.1"
