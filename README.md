@@ -1,19 +1,16 @@
 # osint_investigator_ctf_challenges
 
-CTF challenges for [ctfcli](https://github.com/CTFd/ctfcli) / [multi-ctfd-deploy](https://github.com/Manta-Epitech-Academy/multi-ctfd-deploy), generated from the Epitech Academy CTFd backup and Notion instructor solutions.
+CTF challenges for [ctfcli](https://github.com/CTFd/ctfcli) / [multi-ctfd-deploy](https://github.com/Manta-Epitech-Academy/multi-ctfd-deploy).
 
 **Repository:** https://github.com/Manta-Epitech-Academy/osint_investigator_ctf_challenges
 
 ## Contents
 
-- **29 challenges** under `challenges/` (23 from `backup/`, 6 scaffolded from Notion only)
-- Prerequisites: `tools/requirements.json`
-- Next-unlock chain: `tools/next_unlock.json`
-- Missing player files: `tools/missing_assets.json`
+- **29 challenges** under `challenges/`
 
 ## Secrets
 
-Flags and writeups are GPG-encrypted in `private/*.gpg` only (never commit `private/flag.txt`, `private/writeup.md`, or `.gpg-passphrase`). The `tools/` directory is local-only and not in this repo.
+Flags and writeups are GPG-encrypted in `private/*.gpg` only (never commit `private/flag.txt`, `private/writeup.md`, or `.gpg-passphrase`).
 
 The **Tutoriel** challenge intentionally includes its flag in the public `description` (same as on the live platform).
 
@@ -23,29 +20,30 @@ export GPG_PASSPHRASE="$(cat .gpg-passphrase)"
 ./encrypt.sh    # before git commit
 ```
 
-## Regenerate
-
-```bash
-python3 tools/convert_notion_backup_to_ctfd.py
-export GPG_PASSPHRASE="$(cat .gpg-passphrase)"
-./encrypt.sh
-```
-
-Sources: `../ExportBlock-c2cfd994-9870-45bc-a09a-5463b7a5c08c-Part-1.zip`, `../backup/`.
-
 ## Deploy
 
 ```bash
 export GPG_PASSPHRASE="$(cat .gpg-passphrase)"
 ./decrypt.sh
 cd ../multi-ctfd-deploy
-python3 deploy_challenges.py ../epitech_2025_ctf_challenges --subdir challenges --instance <name>
+python3 deploy_challenges.py https://github.com/Manta-Epitech-Academy/osint_investigator_ctf_challenges.git --subdir challenges --instance <name>
 ```
 
-Configure challenge prerequisites and `next_id` unlocks in CTFd admin using the JSON files in `tools/`.
+Or from a local clone:
+
+```bash
+python3 deploy_challenges.py ../epitech_2025_ctf_challenges --no-clone --subdir challenges --instance <name>
+```
+
+Configure challenge prerequisites and next-challenge unlocks in the CTFd admin UI.
 
 ## Description-only challenges (awaiting assets)
 
-See `tools/missing_assets.json`: Fichiers fantômes, Enquête moléculaire, Sonagram, Encre sympathique, Retour dans le passé, Un simple pont.
+These challenges have no player file yet; add assets under the challenge folder, list them in `files:` in `challenge.yml`, then re-encrypt and redeploy:
 
-Drop files into the challenge folder, add them under `files:` in `challenge.yml`, then re-encrypt and redeploy.
+- Fichiers fantômes
+- Enquête moléculaire
+- Sonagram
+- Encre sympathique
+- Retour dans le passé
+- Un simple pont
