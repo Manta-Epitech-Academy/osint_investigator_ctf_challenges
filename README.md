@@ -1,6 +1,8 @@
-# epitech_2025_ctf_challenges
+# osint_investigator_ctf_challenges
 
-CTF challenges for [ctfcli](https://github.com/CTFd/ctfcli) / [multi-ctfd-deploy](../multi-ctfd-deploy), generated from the Epitech Academy CTFd backup and Notion instructor solutions.
+CTF challenges for [ctfcli](https://github.com/CTFd/ctfcli) / [multi-ctfd-deploy](https://github.com/Manta-Epitech-Academy/multi-ctfd-deploy), generated from the Epitech Academy CTFd backup and Notion instructor solutions.
+
+**Repository:** https://github.com/Manta-Epitech-Academy/osint_investigator_ctf_challenges
 
 ## Contents
 
@@ -11,7 +13,9 @@ CTF challenges for [ctfcli](https://github.com/CTFd/ctfcli) / [multi-ctfd-deploy
 
 ## Secrets
 
-Flags and writeups are GPG-encrypted in `private/*.gpg`. Passphrase in `.gpg-passphrase` (gitignored).
+Flags and writeups are GPG-encrypted in `private/*.gpg` only (never commit `private/flag.txt`, `private/writeup.md`, or `.gpg-passphrase`). The `tools/` directory is local-only and not in this repo.
+
+The **Tutoriel** challenge intentionally includes its flag in the public `description` (same as on the live platform).
 
 ```bash
 export GPG_PASSPHRASE="$(cat .gpg-passphrase)"
