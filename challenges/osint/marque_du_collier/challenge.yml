@@ -21,6 +21,9 @@ attempts: 0
 
 logic: any
 
+requirements:
+  - "Tutoriel"
+
 tags:
   - osint
   - easy
@@ -28,5 +31,5 @@ tags:
 files:
   - toutou.jpg
 
-state: visible
+state: hidden
 version: "0.1"

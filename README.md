@@ -29,7 +29,7 @@ Three CTFD.md draft challenges still use placeholder flags in `private/*.gpg` un
 | Message dans le nonogramme | `ctf{TODO_NONOGRAMME}` |
 | QRCode inversé | `ctf{TODO_QR_INVERSE}` |
 
-Run `./decrypt.sh`, edit `private/flag.txt`, then `./encrypt.sh` before deploy.
+Run `./decrypt.sh`, edit `private/flag.txt`, then `./encrypt.sh` before deploy. These challenges use `state: hidden` in `challenge.yml` until assets and flags are ready.
 
 ## Secrets
 
@@ -58,4 +58,4 @@ Or from a local clone:
 python3 deploy_challenges.py ../epitech_2025_ctf_challenges --no-clone --subdir challenges --instance <name>
 ```
 
-Configure challenge prerequisites and next-challenge unlocks in the CTFd admin UI.
+Configure category unlock chains and other CTFd relationships in the admin UI if needed. Every challenge except **Tutoriel** declares `requirements: ["Tutoriel"]` in its `challenge.yml` (ctfcli format).

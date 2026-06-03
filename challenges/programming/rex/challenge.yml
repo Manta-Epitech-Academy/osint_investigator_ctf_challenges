@@ -26,6 +26,9 @@ attempts: 0
 
 logic: any
 
+requirements:
+  - "Tutoriel"
+
 tags:
   - programming
   - medium

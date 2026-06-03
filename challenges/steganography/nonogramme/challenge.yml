@@ -21,6 +21,9 @@ attempts: 0
 
 logic: any
 
+requirements:
+  - "Tutoriel"
+
 tags:
   - steganography
   - medium
@@ -28,5 +31,5 @@ tags:
 files:
   - nonogramme.png
 
-state: visible
+state: hidden
 version: "0.1"

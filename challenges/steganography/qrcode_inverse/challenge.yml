@@ -21,11 +21,14 @@ attempts: 0
 
 logic: any
 
+requirements:
+  - "Tutoriel"
+
 tags:
   - steganography
   - medium
 
 files: []
 
-state: visible
+state: hidden
 version: "0.1"
