@@ -7,7 +7,7 @@ CTF challenges for [ctfcli](https://github.com/CTFd/ctfcli) / [multi-ctfd-deploy
 ## Contents
 
 - **31 challenges** under `challenges/`
-- **`index.html`** — optional CTFd home page fragment (French onboarding for players); deployed with [deploy_challenges](https://github.com/kevin-cazal/deploy_challenges) when present at repo root ([format](https://github.com/kevin-cazal/deploy_challenges/blob/main/CHALLENGE_REPOSITORY.md))
+- **`challenges/index.html`** — optional CTFd home page fragment (French onboarding for players); deployed with [deploy_challenges](https://github.com/kevin-cazal/deploy_challenges) when present under the `--subdir` root ([format](https://github.com/kevin-cazal/deploy_challenges/blob/main/CHALLENGE_REPOSITORY.md))
 
 ## Missing assets
 
