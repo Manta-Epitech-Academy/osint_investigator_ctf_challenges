@@ -4,9 +4,9 @@ name: Un simple pont
 author: "author"
 category: geoint
 description: |
-  Pouvez-vous trouver le nom de celui qui a pris la photo ainsi que la ville où la photo a été prise ?
+  Pouvez-vous trouver le nom de celui qui a pris la photo ainsi que la commune où la photo a été prise ?
   
-  format: ctf{nom_ville}
+  format: ctf{nom_commune}
   
   Exemple de réponse : ctf{Maya_Castelnau-Le-Lez}
   >
@@ -26,6 +26,9 @@ logic: any
 tags:
   - geoint
   - medium
+
+files:
+  - le_pont.jpg
 
 state: visible
 version: "0.1"

@@ -23,5 +23,8 @@ tags:
   - programming
   - medium
 
+files:
+  - empty.txt
+
 state: visible
 version: "0.1"

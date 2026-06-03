@@ -25,5 +25,8 @@ tags:
   - steganography
   - medium
 
+files:
+  - molecule.png
+
 state: visible
 version: "0.1"

@@ -6,7 +6,7 @@ CTF challenges for [ctfcli](https://github.com/CTFd/ctfcli) / [multi-ctfd-deploy
 
 ## Contents
 
-- **29 challenges** under `challenges/`
+- **27 challenges** under `challenges/`
 
 ## Secrets
 
@@ -36,14 +36,3 @@ python3 deploy_challenges.py ../epitech_2025_ctf_challenges --no-clone --subdir 
 ```
 
 Configure challenge prerequisites and next-challenge unlocks in the CTFd admin UI.
-
-## Description-only challenges (awaiting assets)
-
-These challenges have no player file yet; add assets under the challenge folder, list them in `files:` in `challenge.yml`, then re-encrypt and redeploy:
-
-- Fichiers fantômes
-- Enquête moléculaire
-- Sonagram
-- Encre sympathique
-- Retour dans le passé
-- Un simple pont

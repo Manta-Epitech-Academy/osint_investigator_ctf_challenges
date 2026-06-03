@@ -4,8 +4,8 @@ name: Camouflage
 author: "author"
 category: steganography
 description: |
-  Un fichier texte a été trouvé, mais il contient des caractères très étranges… Est-ce vraiment un fichier texte?
-    
+  Un fichier inconnu a été trouvé sur un serveur. C'est certainement un fichier important contenant un flag.
+
   format: ctf{solution}
 attribution: "Written by [author](https://ctfd.io)"
 value: 60
@@ -25,7 +25,12 @@ tags:
   - medium
 
 files:
-  - txtfake.txt
+  - document.docx
+
+hints:
+  - "Les types de fichiers n'est pas forcément lié à son extension"
+  - "Essayez de trouver le type de fichier en utilisant les méthodes de détection de fichiers"
+  - "La majorité des fichiers binaires comportent une 'entête': quelques octets au début du fichier qui déterminent son type"
 
 state: visible
 version: "0.1"

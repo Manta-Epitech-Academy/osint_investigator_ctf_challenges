@@ -26,5 +26,8 @@ tags:
   - steganography
   - hard
 
+files:
+  - music.wav
+
 state: visible
 version: "0.1"
