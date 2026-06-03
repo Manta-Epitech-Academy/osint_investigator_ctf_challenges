@@ -26,6 +26,7 @@ tags:
 
 files:
   - image_noise_1.png
+  - image_1.png
 
 state: visible
 version: "0.1"

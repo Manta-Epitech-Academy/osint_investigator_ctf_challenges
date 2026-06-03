@@ -6,7 +6,30 @@ CTF challenges for [ctfcli](https://github.com/CTFd/ctfcli) / [multi-ctfd-deploy
 
 ## Contents
 
-- **27 challenges** under `challenges/`
+- **31 challenges** under `challenges/`
+- **`index.html`** — optional CTFd home page fragment (French onboarding for players); deployed with [deploy_challenges](https://github.com/kevin-cazal/deploy_challenges) when present at repo root ([format](https://github.com/kevin-cazal/deploy_challenges/blob/main/CHALLENGE_REPOSITORY.md))
+
+## Missing assets
+
+Challenges whose `files:` list references a file that is not yet in the repo (or is empty):
+
+| Challenge | Folder | Status |
+|-----------|--------|--------|
+| QRCode inversé | `challenges/steganography/qrcode_inverse/` | **Missing asset** — no QR image in the Notion export; add image and update `challenge.yml` `files:` before deploy |
+
+All other challenges with a `files:` section have their assets present locally.
+
+## Placeholder flags
+
+Three CTFD.md draft challenges still use placeholder flags in `private/*.gpg` until validated:
+
+| Challenge | Placeholder |
+|-----------|-------------|
+| Marque du collier | `ctf{TODO_KONG}` |
+| Message dans le nonogramme | `ctf{TODO_NONOGRAMME}` |
+| QRCode inversé | `ctf{TODO_QR_INVERSE}` |
+
+Run `./decrypt.sh`, edit `private/flag.txt`, then `./encrypt.sh` before deploy.
 
 ## Secrets
 

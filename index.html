@@ -1,0 +1,279 @@
+<style>
+  .ctf-home {
+    --ctf-bg: #0f1419;
+    --ctf-surface: #1a2332;
+    --ctf-surface-2: #243044;
+    --ctf-accent: #5eead4;
+    --ctf-accent-2: #818cf8;
+    --ctf-warm: #fbbf24;
+    --ctf-text: #e2e8f0;
+    --ctf-muted: #94a3b8;
+    --ctf-border: rgba(148, 163, 184, 0.18);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: var(--ctf-text);
+    line-height: 1.65;
+    max-width: 52rem;
+    margin: 0 auto;
+  }
+
+  .ctf-home * {
+    box-sizing: border-box;
+  }
+
+  .ctf-home .hero {
+    background: linear-gradient(135deg, var(--ctf-surface) 0%, #162032 55%, #1e1b3a 100%);
+    border: 1px solid var(--ctf-border);
+    border-radius: 1.25rem;
+    padding: 2rem 2rem 1.75rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ctf-home .hero::before {
+    content: "";
+    position: absolute;
+    top: -3rem;
+    right: -2rem;
+    width: 12rem;
+    height: 12rem;
+    background: radial-gradient(circle, rgba(94, 234, 212, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .ctf-home .badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ctf-bg);
+    background: var(--ctf-accent);
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    margin-bottom: 0.85rem;
+  }
+
+  .ctf-home h1 {
+    font-size: clamp(1.6rem, 4vw, 2.15rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+    background: linear-gradient(90deg, #fff 0%, var(--ctf-accent) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .ctf-home .lead {
+    font-size: 1.05rem;
+    color: var(--ctf-muted);
+    margin: 0;
+    max-width: 42rem;
+  }
+
+  .ctf-home section {
+    background: var(--ctf-surface);
+    border: 1px solid var(--ctf-border);
+    border-radius: 1rem;
+    padding: 1.35rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .ctf-home h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #f8fafc;
+  }
+
+  .ctf-home h2 .icon {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  .ctf-home p {
+    margin: 0 0 0.75rem;
+    color: var(--ctf-text);
+  }
+
+  .ctf-home p:last-child,
+  .ctf-home ul:last-child {
+    margin-bottom: 0;
+  }
+
+  .ctf-home ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .ctf-home li {
+    margin-bottom: 0.45rem;
+    color: var(--ctf-text);
+  }
+
+  .ctf-home li strong {
+    color: #f1f5f9;
+  }
+
+  .ctf-home .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    gap: 0.65rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ctf-home .categories li {
+    background: var(--ctf-surface-2);
+    border: 1px solid var(--ctf-border);
+    border-radius: 0.65rem;
+    padding: 0.65rem 0.75rem;
+    margin: 0;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+
+  .ctf-home .categories span {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--ctf-muted);
+    margin-top: 0.2rem;
+  }
+
+  .ctf-home .tip-grid {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .ctf-home .tip {
+    background: var(--ctf-surface-2);
+    border-left: 3px solid var(--ctf-accent-2);
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 0.75rem 0.9rem;
+  }
+
+  .ctf-home .tip strong {
+    color: var(--ctf-accent);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .ctf-home .flag-box {
+    font-family: ui-monospace, "Cascadia Code", "Fira Code", monospace;
+    background: #0b1220;
+    border: 1px dashed var(--ctf-warm);
+    color: var(--ctf-warm);
+    padding: 0.65rem 0.85rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    margin: 0.5rem 0 0;
+    display: inline-block;
+  }
+
+  .ctf-home .cta {
+    background: linear-gradient(135deg, rgba(94, 234, 212, 0.12) 0%, rgba(129, 140, 248, 0.12) 100%);
+    border-color: rgba(94, 234, 212, 0.35);
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .ctf-home .cta p {
+    font-size: 1.05rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .ctf-home .cta em {
+    color: var(--ctf-accent);
+    font-style: normal;
+    font-weight: 700;
+  }
+</style>
+
+<div class="ctf-home">
+  <header class="hero">
+    <span class="badge">OSINT Investigator</span>
+    <h1>Bienvenue sur la chasse au trésor numérique&nbsp;!</h1>
+    <p class="lead">
+      Tu vas résoudre des énigmes, comme un détective du web.
+      Pas besoin d’être un hacker de film&nbsp;: curiosité, logique et entraide suffisent.
+    </p>
+  </header>
+
+  <section>
+    <h2><span class="icon">🚩</span> C’est quoi un CTF&nbsp;?</h2>
+    <p>
+      <strong>CTF</strong> veut dire <em>Capture The Flag</em> — «&nbsp;capture le drapeau&nbsp;».
+      Imagine une chasse au trésor sur ordinateur&nbsp;: chaque énigme résolue te donne un
+      <strong>flag</strong> (un code secret) et des points.
+    </p>
+    <p>
+      Les flags ressemblent souvent à ceci&nbsp;:
+    </p>
+    <div class="flag-box">ctf{ma_super_reponse}</div>
+    <p style="margin-top: 0.85rem;">
+      Tu copies ce code dans le champ «&nbsp;Submit&nbsp;» du défi sur la plateforme.
+      Bonne réponse&nbsp;? Les points sont à toi&nbsp;!
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🧠</span> L’état d’esprit qui marche</h2>
+    <ul>
+      <li><strong>Sois curieux·se.</strong> Clique, ouvre les fichiers, lis tout — même ce qui paraît bizarre.</li>
+      <li><strong>Travaille en équipe.</strong> Deux cerveaux valent mieux qu’un. Partagez vos idées sans vous moquer.</li>
+      <li><strong>Google, c’est autorisé.</strong> Personne ne naît en sachant tout. Chercher comment faire, c’est du vrai travail de recherche.</li>
+      <li><strong>Reste calme.</strong> Un défi bloqué, c’est normal. Fais une pause, change de catégorie, reviens plus tard.</li>
+      <li><strong>Note tes découvertes.</strong> Un mot de passe trouvé, une piste, une URL… ça sert plus tard.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🗂️</span> Les types de défis ici</h2>
+    <ul class="categories">
+      <li>Cryptographie<span>Décoder des messages cachés</span></li>
+      <li>Stéganographie<span>Des indices dissimulés dans images, sons, textes…</span></li>
+      <li>OSINT<span>Trouver des infos avec le web et les réseaux</span></li>
+      <li>GeoInt<span>Localiser un lieu sur une carte</span></li>
+      <li>Programmation<span>Lire ou exécuter du code</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">💡</span> Astuces de pro (même pour débuter)</h2>
+    <div class="tip-grid">
+      <div class="tip">
+        <strong>Commence par «&nbsp;Tutoriel&nbsp;»</strong>
+        C’est le défi le plus simple. Il te montre comment valider un flag sur la plateforme.
+      </div>
+      <div class="tip">
+        <strong>Lis la consigne deux fois</strong>
+        Le format de réponse est souvent indiqué (<code>ctf{…}</code>, un lien, un nom, une date…). Respecte-le à la lettre.
+      </div>
+      <div class="tip">
+        <strong>Inspecte les fichiers</strong>
+        Renommer une extension, ouvrir une image dans un éditeur hex, regarder les métadonnées (tu ne sais pas ce que c'est&nbsp;? Google est ton ami)… les bonnes pistes sont parfois invisibles à l’œil nu.
+      </div>
+      <div class="tip">
+        <strong>Change d’angle</strong>
+        Bloqué sur la crypto&nbsp;? Tente un défi OSINT. Le cerveau aime les pauses déguisées en victoires faciles&nbsp;!
+      </div>
+      <div class="tip">
+        <strong>Demande un indice</strong>
+        Certains défis proposent des hints (parfois avec une petite pénalité de points). Mieux vaut apprendre que rester frustré·e une heure.
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <p>Prêt·e&nbsp;? Rejoins ton équipe, ouvre la catégorie <em>Introduction</em>, et lance le défi <em>Tutoriel</em>.</p>
+    <p style="color: var(--ctf-muted); font-size: 0.95rem; margin: 0;">
+      Bon CTF — et surtout, amuse-toi en apprenant&nbsp;! 🎯
+    </p>
+  </section>
+</div>

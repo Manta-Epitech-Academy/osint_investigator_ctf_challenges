@@ -1,14 +1,15 @@
 # Challenge specification for ctfcli
 # https://github.com/CTFd/ctfcli
-name: Derrière l’image
+name: QRCode inversé
 author: "author"
-category: osint
+category: steganography
 description: |
-  Un ancien étudiant d'Epitech nous a laissé cette image: le logo de l'école y est clairement visible, mais quelque chose semble y avoir été dissimulé.
-   
+  Un QR code aux couleurs a été intercepté, mais il semble illisible.
+  Trouvez comment le rendre lisible pour en extraire le flag.
+
   format: ctf{solution}
 attribution: "Written by [author](https://ctfd.io)"
-value: 50
+value: 70
 type: standard
 
 image: null
@@ -21,12 +22,10 @@ attempts: 0
 logic: any
 
 tags:
-  - osint
-  - easy
+  - steganography
+  - medium
 
-files:
-  - epitech_4.jpg
-  - vmv_osint_grande.png
+files: []
 
 state: visible
 version: "0.1"

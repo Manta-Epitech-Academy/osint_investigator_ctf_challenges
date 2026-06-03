@@ -1,0 +1,38 @@
+# Challenge specification for ctfcli
+# https://github.com/CTFd/ctfcli
+name: Faux texte
+author: "author"
+category: steganography
+description: |
+  Un fichier texte a été trouvé, mais il contient des caractères très étranges… Est-ce vraiment un fichier texte?
+
+  format: ctf{solution}
+attribution: "Written by [author](https://ctfd.io)"
+value: 60
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: null
+attempts: 0
+
+logic: any
+
+tags:
+  - steganography
+  - medium
+
+files:
+  - ctf_numbers_encrypt.txt
+  - ctf_numbers.png
+  - txtfake.txt
+
+hints:
+  - "Les types de fichiers n'est pas forcément lié à son extension"
+  - "Essayez de trouver le type de fichier en utilisant les méthodes de détection de fichiers"
+  - "La majorité des fichiers binaires comportent une 'entête': quelques octets au début du fichier qui déterminent son type"
+
+state: visible
+version: "0.1"
